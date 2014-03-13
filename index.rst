@@ -73,3 +73,26 @@ Table 2.1 - Lessons
 +--+-------------------------+---------------------------------------------------------------------------------------------------------------+
 |11|Input02                  | 在Input01的基础上, 学习如何开发一个命令行接口                                                                 |
 +--+-------------------------+---------------------------------------------------------------------------------------------------------------+
+
+lession 0 课程介绍
+--------------------
+
+这节课程没有特别的内容, 主要是介绍什么是操作系统, 什么是汇编等. 如果你有一定经验, 或者你急于开始课程, 可以直接略过这一节.
+
+操作系统
+~~~~~~~~~~
+
+操作系统可以看作一个非常复杂的程序. 他的主要工作是管理这台电脑上的其他程序, 包括分享这台电脑的时间, 内存, 硬件和其他资源. 你可能听说过一些桌面操作系统如, GNU/Linux, Mac OSX, Microsoft Windows. 除了电脑, 如手机等其他设备也需要操作系统, 他们可能会使用 Android, IOS 或者 Windows Phone. [1]
+
+因为操作系统必须运行在硬件设备上, 所以我们必须学一些关于硬件设备的知识. 为了使操作系统可以在更多的电脑上运行, 驱动程序被开发了出来. 驱动程序是很小的程序，被设计成可以添加或删除的程序, 其设计的目的就是让操作系统可以和特定的硬件通话, 使操作系统可以正确识别并使用硬件. 在这个课程里, 我们不学习驱动程序的开发, 取而代之的是, 我们将会针对Raspberry Pi 开发一个驱动.
+
+操作系统设计有非常多的风格和不同, 这个课程只能涉及皮毛. 这个课程我们将会关注操作系统和硬件通过bit的通信, 并且这里将会是经常出现trick的地方, 并且这里是文档和online help最少的地方. 
+
+汇编
+~~~~~~~~~~
+
+This course will be written almost exclusively in assembly code. Assembly code is code that is very close to what the computer understands. How a computer really works is that there is a small device called a processor which is capable of performing simple jobs like adding numbers, and there is a set of one or more microchips called the RAM which are capable of storing numbers. When a computer has power, the processor works through a sequence of instructions given to it by the programmer, which cause it to change numbers in the RAM, and interact with connected hardware. Assembly code is a translation into human readable text of those commands.
+这个教程基本都是用汇编写的. 汇编是非常贴近机器语言的一种编程语言. 计算机的工作原理是: 有一个叫处理器(processor) 的东西, 来处理例如加法的等任务. 有一个叫RAM的东西来作为存储. 计算机开启之后, 会按照开发人员的设计来执行一系列指令, 这些指令会导致RAM中存储的数据改变, 进而影响到硬件设备. 汇编是把这些指令转换成更适合人阅读的文本. (这段就是在说汇编语言是什么...)
+
+When programming normally, the programmer writes code in a programming language such as C++, Java, C#, Basic, etc, and then a program called the compiler translates what the programmer wrote into assembly code, which is the further reduced into binary code[2]. Binary code is what the computer actually understands, but it is almost impossible for humans to read. Assembly code is much better, but it can be frustrating how few commands are possible. Remember that every command you write in assembly code is something that the processor understands directly, and so the commands are simple by design, as a physical circuit must process each one.
+通常编程的时候, 程序员会使用诸如 C++, Java, C#, Basic 等编程语言, 然后用一个称之为"编译器"的程序将他们转换为汇编代码, 之后会转换为二进制代码. 二进制代码是计算机实际所使用的, 但是二进制代码几乎无法直接被人类阅读. 汇编能稍微好一点, 但是你可能会因为汇编能使用的命令太少而失望. 记住, 任何你写的汇编代码都是能直接被计算机理解的, 所以这些命令被设计的非常简单, 目的是每个时钟周期能必须处理一条. 
